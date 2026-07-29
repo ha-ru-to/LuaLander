@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d777d270cee3a5c419cb21a828556f1a, type: 3}
+  m_Name: CodeMonkeyFreeSO
+  m_EditorClassIdentifier: 
+  currentVersion: 1.00
+  subtype: lunarLanderFree
+  lastShownTimestamp: 1785291236
+  lastUpdateResponse:
+    version: 1.00
+    versionUrl: https://unitycodemonkey.com
+  checkedLastUpdateTimestamp: 1785291236
+  lastQOTDResponse:
+    questionId: 326
+    questionText: 'What are the minimum requirements (array size) to draw a Mesh
+      Quad?
+
+      <p>Mesh mesh = new Mesh();</p>
+
+      <p>mesh.vertices = ???</p>
+
+      <p>mesh.uv
+      = ???</p>
+
+      <p>mesh.triangles = ???</p>'
+    answerA: 4 vertices, 4 uvs, 2 triangles
+    answerB: 4 vertices, 4 uvs, 6 triangles
+    answerC: 6 vertices, 3 uvs, 4 triangles
+    answerD: 
+    answerE: 
+  lastQotdTimestamp: 1785291236
+  lastDynamicHeaderResponse:
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle.png
+    topText: Get 80% OFF on ALL my Courses and Games!!!
+    topLink: summerbundle
+    bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
+      Newsletter!
+    bottomLink: gamedevreport
+  lastDynamicHeaderTimestamp: 1785291236
+  websiteLatestMessage:
+    text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
+      Click here!</a>
+  websiteLatestMessageTimestamp: 1785291236
+  websiteLatestVideos:
+    videos:
+    - youTubeId: f0BSrBhudoY
+      title: TOP 10 NEW Systems and Tools JULY 2026! | Unity Asset Store
+    - youTubeId: _0Lp-iXEhfU
+      title: Join my Game Dev Practice Lab for FREE!
+    - youTubeId: 2dyD9yWWtCU
+      title: Unity 7 is RE-ANNOUNCED!
+    - youTubeId: -qpKrATW4wM
+      title: TOP 10 FREE NEW Assets JULY 2026!
+  websiteLatestVideosTimestamp: 1785291236
