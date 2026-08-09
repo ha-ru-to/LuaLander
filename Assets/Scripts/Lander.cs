@@ -23,4 +23,23 @@ public class Lander : MonoBehaviour {
             landerRigidbody2D.AddTorque(turnSpeed * Time.deltaTime);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision2D) {
+        float softLandingVelocityMagnitude = 4f;
+        if(collision2D.relativeVelocity.magnitude > softLandingVelocityMagnitude) {
+            //Landed too hard
+            Debug.Log("Landed too hard");
+            return;
+        }
+
+        float dotVector = Vector2.Dot(Vector2.up, transform.up);
+        float minDotVector = .9f;
+        if(dotVector < minDotVector) {
+            //Landed too steep
+            Debug.Log("Landed too steep");
+            return;
+        }
+
+        Debug.Log("Successful landing");
+    }
 }
