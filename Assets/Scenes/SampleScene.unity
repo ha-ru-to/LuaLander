@@ -932,7 +932,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -7.072426, y: 2.3437233, z: 0}
+    - position: {x: -7.072426, y: 2.2830822, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -940,7 +940,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 2, y: 1, z: 0}
+    - position: {x: 3.5160205, y: 2.334098, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -948,7 +948,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 8.628063, y: 10.46467, z: 0}
+    - position: {x: 10.62921, y: 8.463523, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -956,7 +956,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 12.727213, y: 10.000616, z: 0}
+    - position: {x: 17.093353, y: 8.120749, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1024,10 +1024,10 @@ MonoBehaviour:
   - {x: -22.39073, y: 5.185375}
   - {x: -15.828084, y: 4.5111885}
   - {x: -11.558282, y: -0.51794314}
-  - {x: -7.072426, y: 2.3437233}
-  - {x: 2, y: 1}
-  - {x: 8.628063, y: 10.46467}
-  - {x: 12.727213, y: 10.000616}
+  - {x: -7.072426, y: 2.2830822}
+  - {x: 3.5160205, y: 2.334098}
+  - {x: 10.62921, y: 8.463523}
+  - {x: 17.093353, y: 8.120749}
   - {x: 20.171623, y: 3.4019783}
   - {x: 29.414429, y: 7.2758765}
   - {x: 33.813423, y: -1.327668}
@@ -1096,8 +1096,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 2.5613003, y: 1.4673138, z: 0}
-    m_Extent: {x: 31.252125, y: 8.997356, z: 0}
+    m_Center: {x: 2.5613003, y: 0.49004173, z: 0}
+    m_Extent: {x: 31.252125, y: 8.020084, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &2002039864
 Transform:
@@ -1166,10 +1166,10 @@ PolygonCollider2D:
       - {x: -22.39073, y: 5.185375}
       - {x: -15.828084, y: 4.5111885}
       - {x: -11.558282, y: -0.51794314}
-      - {x: -7.072426, y: 2.3437233}
-      - {x: 2, y: 1}
-      - {x: 8.628063, y: 10.46467}
-      - {x: 12.727213, y: 10.000616}
+      - {x: -7.072426, y: 2.2830822}
+      - {x: 3.5160205, y: 2.334098}
+      - {x: 10.62921, y: 8.463523}
+      - {x: 17.093353, y: 8.120749}
       - {x: 20.171623, y: 3.4019783}
       - {x: 29.414429, y: 7.2758765}
       - {x: 33.813423, y: -1.327668}
