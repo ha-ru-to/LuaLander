@@ -57,5 +57,9 @@ public class Lander : MonoBehaviour {
 
         Debug.Log("Landing Angle Score: " + landingAngleScore);
         Debug.Log("Landing Speed Score: " + landingSpeedScore);
+
+        int score = Mathf.RoundToInt((landingSpeedScore + landingAngleScore) * landingPad.GetScoreMultiplier());
+
+        Debug.Log("Score: " + score);
     }
 }
