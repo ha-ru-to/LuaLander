@@ -18,10 +18,14 @@ public class Lander : MonoBehaviour {
     }
 
     private Rigidbody2D landerRigidbody2D;
-    private float fuelAmount = 10f;
+    private float fuelAmount;
+    private float fuelAmountMax = 10f;
 
     private void Awake() {
+        fuelAmount = fuelAmountMax;
+
         Instance = this;
+
         landerRigidbody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -100,10 +104,13 @@ public class Lander : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collider2d) {
-        //NOTE: The collieder 2d is the collider which this gameobj collide with, NOT the gameobj itself
+        //NOTE: collieder2d is the collider which THIS GameObject collide with, NOT the GameObject itself
         if(collider2d.gameObject.TryGetComponent(out FuelPickup fuelPickup)) {
             float addFuelAmmount = 10f;
             fuelAmount += addFuelAmmount;
+            if(fuelAmount > fuelAmountMax) {
+                fuelAmount = fuelAmountMax;
+            }
             fuelPickup.DestroySelf();
         }
 
@@ -115,5 +122,21 @@ public class Lander : MonoBehaviour {
     private void ConsumeFuel() {
         float fuelConsumptionAmount = 1f;
         fuelAmount -= fuelConsumptionAmount * Time.deltaTime;
+    }
+
+    public float GetFuelAmountNormalied() {
+        return fuelAmount / fuelAmountMax;
+    }
+
+    public float GetSpeedX() {
+        return landerRigidbody2D.linearVelocityX;
+    }
+
+    public float GetSpeedY() {
+        return landerRigidbody2D.linearVelocityY;
+    }
+
+    public float GetFuel() {
+        return fuelAmount;
     }
 }
