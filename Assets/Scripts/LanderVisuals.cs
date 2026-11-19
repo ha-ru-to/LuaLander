@@ -5,8 +5,25 @@ public class LanderVisuals : MonoBehaviour {
     [SerializeField] private ParticleSystem leftThrusterParticleSystem;
     [SerializeField] private ParticleSystem middleThrusterParticleSystem;
     [SerializeField] private ParticleSystem rightThrusterParticleSystem;
+    [SerializeField] private GameObject landerExplosionVfx;
 
     private Lander lander;
+
+    private void Start() {
+        lander.OnLanded += Lander_OnLanded;
+    }
+
+    private void Lander_OnLanded(object sender, Lander.OnLandedEventArgs e) {
+        switch (e.landingType) {
+            case Lander.LandingType.TooFastLanding:
+            case Lander.LandingType.TooSteepAngle:
+            case Lander.LandingType.WrongLandingArea:
+                //Crash!
+                Instantiate(landerExplosionVfx,transform.position,Quaternion.identity);
+                gameObject.SetActive(false);
+                break;
+        }
+    }
 
     private void Awake() {
         lander = GetComponent<Lander>();

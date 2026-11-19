@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
     private int score;
     private float time;
+    private bool isTimerActive;
 
     private void Awake() {
         Instance = this;
@@ -12,10 +13,17 @@ public class GameManager : MonoBehaviour {
     private void Start() {
         Lander.Instance.OnCoinPickUp += Lander_OnCoinPickUp;
         Lander.Instance.OnLanded += Lander_OnLanded;
+        Lander.Instance.OnStateChanged += Lander_OnStateChanged;
+    }
+
+    private void Lander_OnStateChanged(object sender, Lander.OnStateChangedEventArgs e) {
+        isTimerActive = e.state == Lander.State.Normal;
     }
 
     private void Update() {
-        time = Time.deltaTime;
+        if (isTimerActive) {
+            time += Time.deltaTime;
+        }
     }
 
     private void Lander_OnLanded(object sender, Lander.OnLandedEventArgs e) {
